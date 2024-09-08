@@ -1,6 +1,9 @@
 import os
 import platform
 
+from quiz import play_quiz
+from bank_account import bank_account
+
 def create_folder():
     """Создает новую папку в рабочей директории."""
     folder_name = input('Введите название папки: ')
@@ -19,6 +22,8 @@ def delete_item():
             print(f'Файл {item_name} успешно удален.')
     else:
         print(f'Файл или папка {item_name} не найдены.')
+
+
 
 def copy_item():
     """Копирует файл или папку в рабочей директории."""

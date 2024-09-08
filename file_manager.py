@@ -3,7 +3,6 @@ import platform
 
 from quiz import play_quiz
 from bank_account import bank_account
-
 def create_folder():
     """Создает новую папку в рабочей директории."""
     folder_name = input('Введите название папки: ')
@@ -89,8 +88,10 @@ def main():
         print('6. Посмотреть только файлы')
         print('7. Просмотр информации об операционной системе')
         print('8. Создатель программы')
-        print('9. Смена рабочей директории')
-        print('10. Выход')
+        print('9. Играть в викторину')
+        print('10. Мой банковский счет')
+        print('11. Смена рабочей директории')
+        print('12. Выход')
         choice = input('Выберите пункт меню: ')
 
         if choice == '1':
@@ -110,8 +111,12 @@ def main():
         elif choice == '8':
             show_creator()
         elif choice == '9':
-            change_directory()
+            play_quiz()
         elif choice == '10':
+            bank_account()
+        elif choice == '11':
+            change_directory()
+        elif choice == '12':
             break
         else:
             print('Неверный пункт меню.')

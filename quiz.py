@@ -1,4 +1,5 @@
 # quiz.py
+
 def play_quiz():
     import random
 

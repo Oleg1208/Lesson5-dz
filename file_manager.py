@@ -1,17 +1,14 @@
-
-
-from quiz import play_quiz
-from bank_account import bank_account
+from change_directory import change_directory
+from copy_item import copy_item
 from create_folder import create_folder
 from delete_item import delete_item
-from copy_item import copy_item
-from show_directory import show_directory
-from show_folders import show_folders
-from show_files import show_files
-from show_os_info import show_os_info
 from show_creator import show_creator
-from change_directory import change_directory
-
+from show_directory import show_directory
+from show_files import show_files
+from show_folders import show_folders
+from show_os_info import show_os_info
+from bank_account import bank_account
+from quiz import play_quiz
 def main():
     """Основная функция программы."""
     while True:

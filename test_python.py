@@ -1,37 +1,79 @@
-import unittest
 import math
 
-class TestPythonFunctions(unittest.TestCase):
+# Дополнительные тесты для filter (фильтрации)
+def test_filter_odd_numbers():
+    result = list(filter(lambda x: x % 2 != 0, [1, 2, 3, 4, 5, 6]))
+    assert result == [1, 3, 5]
 
-    def test_filter(self):
-        numbers = [1, 2, 3, 4, 5]
-        self.assertEqual(list(filter(lambda x: x > 3, numbers)), [4, 5])
-        self.assertEqual(list(filter(lambda x: x % 2 == 0, numbers)), [2, 4])
+def test_filter_strings_with_a():
+    result = list(filter(lambda x: 'a' in x, ["apple", "banana", "cherry", "date"]))
+    assert result == ["apple", "banana", "date"]
 
-    def test_map(self):
-        numbers = [1, 2, 3, 4, 5]
-        self.assertEqual(list(map(lambda x: x * 2, numbers)), [2, 4, 6, 8, 10])
-        self.assertEqual(list(map(lambda x: str(x), numbers)), ['1', '2', '3', '4', '5'])
+def test_filter_large_numbers():
+    result = list(filter(lambda x: x > 100, [50, 150, 200, 30, 400]))
+    assert result == [150, 200, 400]
 
-    def test_sorted(self):
-        numbers = [5, 2, 8, 1, 4]
-        self.assertEqual(sorted(numbers), [1, 2, 4, 5, 8])
-        self.assertEqual(sorted(numbers, reverse=True), [8, 5, 4, 2, 1])
+def test_filter_all_true():
+    result = list(filter(lambda x: True, [1, 2, 3, 4, 5]))
+    assert result == [1, 2, 3, 4, 5]
 
-    def test_math_pi(self):
-        self.assertAlmostEqual(math.pi, 3.141592653589793, places=10)  # Сравнение с точностью до 10 знаков после запятой
+# Дополнительные тесты для map (отображения)
+def test_map_double_numbers():
+    result = list(map(lambda x: x * 2, [1, 2, 3, 4]))
+    assert result == [2, 4, 6, 8]
 
-    def test_math_sqrt(self):
-        self.assertEqual(math.sqrt(9), 3)
-        self.assertEqual(math.sqrt(16), 4)
+def test_map_concat_strings():
+    result = list(map(lambda x: x + "!", ["hi", "hello", "hey"]))
+    assert result == ["hi!", "hello!", "hey!"]
 
-    def test_math_pow(self):
-        self.assertEqual(math.pow(2, 3), 8)
-        self.assertEqual(math.pow(5, 2), 25)
+def test_map_with_multiple_lists():
+    result = list(map(lambda x, y: x + y, [1, 2, 3], [4, 5, 6]))
+    assert result == [5, 7, 9]
 
-    def test_math_hypot(self):
-        self.assertEqual(math.hypot(3, 4), 5)
-        self.assertAlmostEqual(math.hypot(1, 1), 1.4142135623730951, places=10)
+def test_map_empty_string_list():
+    result = list(map(lambda x: x.upper(), []))
+    assert result == []
 
-if __name__ == '__main__':
-    unittest.main()
+# Дополнительные тесты для sorted (сортировки)
+def test_sorted_with_negative_numbers():
+    result = sorted([-3, 1, -5, 2, 4])
+    assert result == [-5, -3, 1, 2, 4]
+
+def test_sorted_empty_list():
+    result = sorted([])
+    assert result == []
+
+# Дополнительные тесты для math.pi
+def test_math_pi_precision():
+    assert round(math.pi, 2) == 3.14
+    assert round(math.pi, 3) == 3.142
+
+# Дополнительные тесты для math.sqrt
+def test_math_sqrt_fractional():
+    assert math.isclose(math.sqrt(2), 1.41421356237, rel_tol=1e-9)
+
+def test_math_sqrt_large_number():
+    assert math.sqrt(1000000) == 1000
+
+def test_math_sqrt_zero():
+    assert math.sqrt(0) == 0
+
+# Дополнительные тесты для math.pow
+def test_math_pow_zero_base():
+    assert math.pow(0, 5) == 0
+    assert math.pow(0, 0) == 1  # 0^0 трактуется как 1
+
+def test_math_pow_negative_base():
+    assert math.pow(-2, 3) == -8
+    assert math.pow(-2, 4) == 16
+
+# Дополнительные тесты для math.hypot
+def test_math_hypot_multiple_args():
+    assert math.hypot(1, 1, 1) == math.sqrt(3)
+    assert math.hypot(2, 2, 2) == math.sqrt(12)
+
+def test_math_hypot_large_numbers():
+    assert math.hypot(300, 400) == 500
+
+def test_math_hypot_zero_args():
+    assert math.hypot(0, 0, 0) == 0

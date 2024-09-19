@@ -1,8 +1,20 @@
-# bank_account.py
+import os
+import json
+
 def bank_account():
     # Реализация работы с банковским счетом
     balance = 0  # Начальный баланс
     purchases = []  # Список покупок
+
+    # Проверка наличия файла с балансом
+    if os.path.exists('balance.txt'):
+        with open('balance.txt', 'r') as f:
+            balance = float(f.read())
+
+    # Проверка наличия файла с историей покупок
+    if os.path.exists('purchases.json'):
+        with open('purchases.json', 'r') as f:
+            purchases = json.load(f)
 
     while True:
         print('1. пополнение счета')
@@ -35,6 +47,12 @@ def bank_account():
                 print('История покупок пуста.')
 
         elif choice == '4':
+            # Сохранение баланса в файл
+            with open('balance.txt', 'w') as f:
+                f.write(str(balance))
+            # Сохранение истории покупок в файл
+            with open('purchases.json', 'w') as f:
+                json.dump(purchases, f)
             break
 
         else:

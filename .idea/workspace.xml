@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="086663c0-245b-4ab9-a352-43a863adde8f" name="Changes" comment="добовление модулей">
+    <list default="true" id="086663c0-245b-4ab9-a352-43a863adde8f" name="Changes" comment="добавил тесты">
+      <change afterPath="$PROJECT_DIR$/save_directory_content.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/bank_account.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/file_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/file_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz.py" beforeDir="false" afterPath="$PROJECT_DIR$/quiz.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/show_directory.py" beforeDir="false" afterPath="$PROJECT_DIR$/show_directory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_quiz.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,17 +39,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.file_manager (1).executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_filemanager_pure.test_show_os_info.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_create_folder.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_filemanager.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_filemanager_dirty.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_filemanager_pure.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_python.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_quiz.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bank_account.executor&quot;: &quot;Run&quot;,
+    &quot;Python.file_manager (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.file_manager.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python.file_manager (1)">
-    <configuration name="file_manager (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RunManager" selected="Python.file_manager">
+    <configuration name="bank_account" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject3" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -59,7 +72,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/file_manager.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bank_account.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -81,7 +94,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Huawei\PycharmProjects\Lesson5-dz\pythonProject3\file_manager.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/file_manager.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -90,10 +103,58 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in test_filemanager_dirty.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_filemanager_dirty.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_filemanager_pure.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_filemanager_pure.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_python.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_python.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.file_manager (1)" />
         <item itemvalue="Python.file_manager" />
+        <item itemvalue="Python.bank_account" />
+        <item itemvalue="Python tests.Python tests in test_python.py" />
+        <item itemvalue="Python tests.Python tests in test_filemanager_dirty.py" />
+        <item itemvalue="Python tests.Python tests in test_filemanager_pure.py" />
       </list>
     </recent_temporary>
   </component>
@@ -137,13 +198,58 @@
       <option name="project" value="LOCAL" />
       <updated>1725797976528</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="изменения">
+      <option name="closed" value="true" />
+      <created>1725799561399</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725799561399</updated>
+    </task>
+    <task id="LOCAL-00005" summary="добавление модулей">
+      <option name="closed" value="true" />
+      <created>1725988368684</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725988368684</updated>
+    </task>
+    <task id="LOCAL-00006" summary="добавление теста:quiz и python">
+      <option name="closed" value="true" />
+      <created>1725994204427</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1725994204427</updated>
+    </task>
+    <task id="LOCAL-00007" summary="изменил модуль test_python.py">
+      <option name="closed" value="true" />
+      <created>1726084486408</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1726084486408</updated>
+    </task>
+    <task id="LOCAL-00008" summary="добавил тесты">
+      <option name="closed" value="true" />
+      <created>1726310651957</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1726310651957</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="добавление файлов" />
     <MESSAGE value="переименование файла" />
     <MESSAGE value="добовление модулей" />
-    <option name="LAST_COMMIT_MESSAGE" value="добовление модулей" />
+    <MESSAGE value="изменения" />
+    <MESSAGE value="добавление модулей" />
+    <MESSAGE value="добавление теста:quiz и python" />
+    <MESSAGE value="изменил модуль test_python.py" />
+    <MESSAGE value="добавил тесты" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил тесты" />
   </component>
 </project>

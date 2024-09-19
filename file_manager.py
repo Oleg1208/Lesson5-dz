@@ -4,6 +4,7 @@ from create_folder import create_folder
 from delete_item import delete_item
 from show_creator import show_creator
 from show_directory import show_directory
+from save_directory_content import save_directory_content
 from show_files import show_files
 from show_folders import show_folders
 from show_os_info import show_os_info
@@ -16,14 +17,15 @@ def main():
         print('2. Удалить (файл/папку)')
         print('3. Копировать (файл/папку)')
         print('4. Просмотр содержимого рабочей директории')
-        print('5. Посмотреть только папки')
-        print('6. Посмотреть только файлы')
-        print('7. Просмотр информации об операционной системе')
-        print('8. Создатель программы')
-        print('9. Играть в викторину')
-        print('10. Мой банковский счет')
-        print('11. Смена рабочей директории')
-        print('12. Выход')
+        print('5. Cохранить содержимое рабочей директории в файл')
+        print('6. Посмотреть только папки')
+        print('7. Посмотреть только файлы')
+        print('8. Просмотр информации об операционной системе')
+        print('9. Создатель программы')
+        print('10. Играть в викторину')
+        print('11. Мой банковский счет')
+        print('12. Смена рабочей директории')
+        print('13. Выход')
         choice = input('Выберите пункт меню: ')
 
         if choice == '1':
@@ -35,20 +37,22 @@ def main():
         elif choice == '4':
             show_directory()
         elif choice == '5':
-            show_folders()
+            save_directory_content()
         elif choice == '6':
-            show_files()
+            show_folders()
         elif choice == '7':
-            show_os_info()
+            show_files()
         elif choice == '8':
-            show_creator()
+            show_os_info()
         elif choice == '9':
-            play_quiz()
+            show_creator()
         elif choice == '10':
-            bank_account()
+            play_quiz()
         elif choice == '11':
-            change_directory()
+            bank_account()
         elif choice == '12':
+            change_directory()
+        elif choice == '13':
             break
         else:
             print('Неверный пункт меню.')

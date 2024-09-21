@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="086663c0-245b-4ab9-a352-43a863adde8f" name="Changes" comment="добавил тесты">
-      <change afterPath="$PROJECT_DIR$/save_directory_content.py" afterDir="false" />
+    <list default="true" id="086663c0-245b-4ab9-a352-43a863adde8f" name="Changes" comment="добавление">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bank_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/bank_account.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/file_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/show_directory.py" beforeDir="false" afterPath="$PROJECT_DIR$/show_directory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_quiz.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listdir.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/purchases.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz.py" beforeDir="false" afterPath="$PROJECT_DIR$/quiz.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,25 +40,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for test_filemanager_pure.test_show_os_info.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_create_folder.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_filemanager.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_filemanager_dirty.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_filemanager_pure.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_python.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_quiz.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bank_account.executor&quot;: &quot;Run&quot;,
-    &quot;Python.file_manager (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.file_manager.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for test_filemanager_pure.test_show_os_info.executor": "Run",
+    "Python tests.Python tests in test_create_folder.py.executor": "Run",
+    "Python tests.Python tests in test_filemanager.py.executor": "Run",
+    "Python tests.Python tests in test_filemanager_dirty.py.executor": "Run",
+    "Python tests.Python tests in test_filemanager_pure.py.executor": "Run",
+    "Python tests.Python tests in test_python.py.executor": "Run",
+    "Python tests.Python tests in test_quiz.py.executor": "Run",
+    "Python.bank_account.executor": "Run",
+    "Python.file_manager (1).executor": "Run",
+    "Python.file_manager.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "new-feature",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Python.file_manager">
     <configuration name="bank_account" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject3" />
@@ -238,7 +239,23 @@
       <option name="project" value="LOCAL" />
       <updated>1726310651957</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="добавление условия задания ДЗ№7">
+      <option name="closed" value="true" />
+      <created>1726769053820</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1726769053820</updated>
+    </task>
+    <task id="LOCAL-00010" summary="добавление">
+      <option name="closed" value="true" />
+      <created>1726769479285</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1726769479285</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -250,6 +267,8 @@
     <MESSAGE value="добавление теста:quiz и python" />
     <MESSAGE value="изменил модуль test_python.py" />
     <MESSAGE value="добавил тесты" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавил тесты" />
+    <MESSAGE value="добавление условия задания ДЗ№7" />
+    <MESSAGE value="добавление" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавление" />
   </component>
 </project>

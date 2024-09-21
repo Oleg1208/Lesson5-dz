@@ -1,20 +1,53 @@
 import os
 import json
 
-def bank_account():
-    # Реализация работы с банковским счетом
-    balance = 0  # Начальный баланс
-    purchases = []  # Список покупок
 
-    # Проверка наличия файла с балансом
-    if os.path.exists('balance.txt'):
+def save_to_file(file_name, data, mode='w'):
+    """Декоратор для сохранения данных в файл."""
+
+    def decorator(func):
+        def wrapper(*args, **kwargs):
+            result = func(*args, **kwargs)
+            with open(file_name, mode) as f:
+                if isinstance(data, dict):
+                    json.dump(data, f)
+                else:
+                    f.write(str(data))
+            return result
+
+        return wrapper
+
+    return decorator
+
+
+@save_to_file('balance.txt', 0)
+@save_to_file('purchases.json', [])
+def load_data():
+    balance = load_balance()
+    purchases = load_purchases()
+    return balance, purchases
+
+
+def load_balance():
+    try:
         with open('balance.txt', 'r') as f:
-            balance = float(f.read())
+            return float(f.read())
+    except (FileNotFoundError, ValueError) as e:
+        print(f'Ошибка загрузки баланса: {e}')
+        return 0
 
-    # Проверка наличия файла с историей покупок
-    if os.path.exists('purchases.json'):
+
+def load_purchases():
+    try:
         with open('purchases.json', 'r') as f:
-            purchases = json.load(f)
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        print(f'Ошибка загрузки покупок: {e}')
+        return []
+
+
+def bank_account():
+    balance, purchases = load_data()
 
     while True:
         print('1. пополнение счета')
@@ -39,23 +72,27 @@ def bank_account():
                 print(f'Покупка {name} на сумму {amount:.2f} совершена. Текущий баланс: {balance:.2f}')
 
         elif choice == '3':
-            if purchases:
-                print('История покупок:')
-                for purchase in purchases:
-                    print(f'Название: {purchase["name"]}, Сумма: {purchase["amount"]:.2f}')
-            else:
-                print('История покупок пуста.')
+            history = (f'Название: {purchase["name"]}, Сумма: {purchase["amount"]:.2f}' for purchase in purchases)
+            print('История покупок:')
+            print('\n'.join(history) if purchases else 'История покупок пуста.')
 
         elif choice == '4':
-            # Сохранение баланса в файл
-            with open('balance.txt', 'w') as f:
-                f.write(str(balance))
-            # Сохранение истории покупок в файл
-            with open('purchases.json', 'w') as f:
-                json.dump(purchases, f)
             break
 
         else:
             print('Неверный пункт меню')
 
+    # Сохранение баланса и истории покупок перед выходом
+    try:
+        with open('balance.txt', 'w') as f:
+            f.write(str(balance))
+        with open('purchases.json', 'w') as f:
+            json.dump(purchases, f)
+    except Exception as e:
+        print(f'Ошибка при сохранении данных: {e}')
+
     print('До свидания!')
+
+
+if __name__ == '__main__':
+    bank_account()
